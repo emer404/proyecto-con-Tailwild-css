@@ -4,36 +4,82 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barra de navegación</title>
+    <title>El Trébol café version Tailwild</title>
 </head>
 <body>
     
-    <nav class="bg-gray-800 p-5">
-        
+    <nav class="bg-gray-800 p-4 fixed top-0 w-full left-0 z-50">
         <div class="container mx-auto flex justify-between items-center">
             <div class="flex items-center space-x-3">
-                <img src="/img/logo.jpg" alt="logo" class="w-20 h-20">
-                <h2 class="text-white text-xl font-bold">
-                    Café el trébol
-                </h2>
+            <img src="/img/logo.jpg" alt="logo" class=" w-10 h-10 rounded-full">
+            <h2 class="text-white text-xl font-bold">
+                 El trébol café
+            </h2>
+            
             </div>
-
             <!-- Botón hamburguesa para móvil -->
             <button id="menu-btn" class="md:hidden text-white text-2xl focus:outline-none">
                 ☰
             </button>
 
             <!-- Menú de navegación -->
-            <ul id="menu" class="hidden md:flex flex-col md:flex-row space-x-0 md:space-x-4 text-white absolute md:static top-16 left-0 w-full md:w-auto bg-gray-800 p-4 md:p-0 z-10">
-                <li><a href="#" class="hover:underline block py-2 md:py-0">Inicio</a></li>
-                <li><a href="#" class="hover:underline block py-2 md:py-0">Productos</a></li>
-                <li><a href="#" class="hover:underline block py-2 md:py-0">Contacto</a></li>
-                <li><a href="#" class="text-green-700 border-1 border-green-700 block py-2 md:py-0">Ordenar ahora</a></li>
+             <div class="flex space-x-5 items-center">
+            <ul id="menu" class="hidden md:flex flex-col md:flex-row space-x-0 md:space-x-4 text-gray-400 absolute md:static top-16 left-0 w-full md:w-auto bg-gray-800 p-4 md:p-0 z-10">
+                <li><a href="#" class=" block py-2 md:py-0 hover:text-gray-300">Inicio</a></li>
+                <li><a href="#" class=" block py-2 md:py-0 hover:text-gray-300">Productos</a></li>
+                <li><a href="#" class=" block py-2 md:py-0 hover:text-gray-300">Galeria</a></li>
+                <li><a href="#" class=" block py-2 md:py-0 hover:text-gray-300">Contacto</a></li>
             </ul>
-        </div>
+
+            <a href="#" class="text-green-700 border-1 border-green-700 px-4 py-2 block rounded hover:bg-green-500 hover:text-white">Ordenar ahora</a>
+        </div></div>
 
     </nav>
 
+    <section class="py-10 mt-15 ">
+        <div class="container mx-auto px-5">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 ">
+                <div>
+                   <img src="/img/grupal.PNG" alt="imagen" class="rounded-2xl hover:scale-105 transition-transform duration-150">
+                </div>
+
+                <div>
+                    <h2 class="font-bold text-2xl mt-5">Compromiso local</h2>
+                    <h1 class="text-green-600 text-4xl">Economía Popular: Más que café, es comunidad</h1>
+
+                    <p class="mt-4">En Esencia Cafetera, creemos en el poder de lo local. Nuestro modelo de "Economía Popular" se basa en alianzas directas con pequeños caficultores de Pitalito, garantizando precios justos y fomentando el desarrollo de nuestra región. Cada grano que tostamos cuenta la historia de una familia trabajadora. No somos solo una cafetería; somos el puente entre el campo y la ciudad, celebrando la identidad huilense en cada sorbo</p>
+
+                    <h3 class="text-green-600  text-2xl mt-4">Trato directo</h3>
+                    <p>Sin intermediarios, para el bienestar del productor.</p>
+                    <h3 class="text-green-600 text-2xl mt-5">Sostenible</h3>
+                    <p>Prácticas amigables con el medio ambiente.</p>
+                </div>
+
+                <div>
+                    <h2 class="font-bold text-2xl mt-5">Nuestro espacio</h2>
+                    <h1 class="text-green-600 text-4xl">Coworking con aroma de café</h1>
+
+                    <p class="mt-4">Más que una cafetería, El Trébol Café es un punto de encuentro para creadores, emprendedores y soñadores. Nuestro espacio de coworking está diseñado para que trabajes, estudies o compartas ideas mientras disfrutas del mejor café de Pitalito. Con WiFi gratuito, múltiples puntos de carga y un ambiente acogedor, convertimos cada visita en una experiencia productiva y placentera.</p>
+
+                    <h3 class="text-green-600  text-2xl mt-4">Ambiente único</h3>
+                    <p>Mesas amplias, iluminación natural y música suave crean el entorno perfecto para tu concentración o tus reuniones más importantes.</p>
+                    <h3 class="text-green-600 text-2xl mt-5">Conexión y confort</h3>
+                    <p>WiFi de alta velocidad y espacios diseñados para que te sientas como en casa mientras trabajas o estudias.</p>
+                </div>
+
+                <div>
+                     <img src="/img/personal.jpeg" alt="imagen" class="rounded-2xl w-170 h-140 hover:scale-105 transition-transform duration-150 ">
+                </div>
+
+                
+            </div>
+        </div>
+
+    </section>
+
+    <section class="bg-gray-800 py-5">
+        <h1 class="text-teal-50 text-center">pie de pagina</h1>
+    </section>
     <script>
         // Función para alternar el menú
         const menuBtn = document.getElementById('menu-btn');
